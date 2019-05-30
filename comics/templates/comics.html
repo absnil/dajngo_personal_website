@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<style>
+header{
+	background-color:#123;
+	padding:30px;
+	text-align:center;
+	font-size:35px;
+	color:blue;
+}
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+.album{
+	padding:50px;
+	background-color:coral;
+}
+.row{
+	padding-bottom:20px;
+}
+
+
+</style>
+
+</style>
+
+<head>
+<title> Abhinav Here</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+<link rel="shortcut icon" type="image/x-icon" href="static/comics/images/siteico.ico" />
+
+
+<link href="https://fonts.googleapis.com/css?family=East+Sea+Dokdo&display=swap" rel="stylesheet">
+
+</head>
+<meta charset="utf-8">
+
+<body stle="background-color:red;">
+
+<header>
+<h2> Abhinav Here</h2>
+</header>
+
+
+<nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand" href="/">Abhinav Here!</a>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="/projects/">Projects</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="/blog/">Blog</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="" href="" style="text-decoration: underline;">Comics</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="/music/">Music</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<!--
+<div class="container-fluid">
+
+<h1 align="center">Comics</h1>
+
+{%for post in object_list %}
+  <div class="gallery">
+        <img src="{{ post.cover.url}}" alt="{{ post.title }}">
+        <div class="desc">{{post.title}}</div>
+  </div>
+{% endfor %}
+
+
+
+
+</div>
+-->
+
+
+<div class="album">
+			 <div class="container">
+
+				 <div class="row" style="padding:10px;">
+					 {%for post in object_list %}
+				 <div class="col-md-4 col-lg-6 col-sm-12 ">
+			<!--		 <div class="card mb-6 box-shadow"> -->
+						 <img style="width: 400px;height: 400px;"class="card-img-top" src="{{ post.cover.url}}" alt="{{ post.title }}">
+						 <div class="card-body" align="center">
+							 <h3  style="font-family:  'East Sea Dokdo', cursive; font-size:30px;">{{post.title}}</h3>
+							<a href="{{ post.cover.url}}"class="btn btn-md btn-secondary btn-dark">View</a>
+<br><br>
+						 </div>
+	<!--				 </div> -->
+ 				 </div>
+{% endfor %}
+			 </div>
+
+</div>
+</div>
+
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+</body>
+
+
+
+
+</html>
